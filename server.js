@@ -22,6 +22,7 @@ app.use(static("website"));
 const port = 8080;
 // Spin up the server
 const server = app.listen(port, () => {
+  console.log("server is running");
   console.log(`running on localhost: ${port}`);
 });
 
