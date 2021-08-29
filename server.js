@@ -1,5 +1,5 @@
 // Setup empty JS object to act as endpoint for all routes
-projectData = { greating: 'Hello there' };
+projectData = {};
 
 // Require Express to run server and routes
 const express = require('express');
@@ -9,12 +9,13 @@ const app = express();
 
 /* Middleware*/
 const bodyParser = require('body-parser');
+const cors = require('cors');
+
 //Here we are configuring express to use body-parser as middle-ware.
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Cors for cross origin allowance
-const cors = require('cors');
 app.use(cors());
 
 // Initialize the main project folder
@@ -30,14 +31,17 @@ const server = app.listen(port, () => {
 });
 
 // GET route
-
-app.get('/all', (req, res) => {
+app.get('/allData', (req, res) => {
+  // Endpoint for all routes
   res.send(projectData);
 });
 
+// const data = [];
 // POST route
-app.post('/add', (req, res) => {
-  res.send(projectData);
-});
+// app.post('/addData', function sendData(req, res) {
+//   projectData['content'] = res.body.userResponse;
+//   projectData['temperature'] = res.body.temp;
+//   projectData['date'] = res.body.date;
 
-// node server.js
+//   res.send(projectData);
+// });
