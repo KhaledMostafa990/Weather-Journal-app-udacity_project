@@ -39,7 +39,7 @@ url, api key, user input, zipcode etc..
 
 ### Use api url and api key to get weather data (GET request)
 
--make async function(GET request) in app.js (client-side) to call api and get data using "fetch"
+-make async function(GET request) in app.js to call api and get data using "fetch"
 
 ### User Event listener
 
@@ -49,5 +49,7 @@ url, api key, user input, zipcode etc..
 
 -make another async function that post the data incoming from api and user input
 to the app
+
+### Rewrite UI style
 
 ### Udapte data that coming from user and api
