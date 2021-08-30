@@ -8,9 +8,10 @@ Project requires from me.. create an asynchronous web app for get weather temper
 ## Instructions
 
 This will require modifying the `server.js` file and the `website/app.js` file.
-I can see `index.html` for element references, and once I have finished with the project steps, I will use `style.css` to style the application to customized perfection.
+I can see `index.html` for element references, and once I have finished with the project steps,
+I will use `style.css` to style the application to customized perfection.
 
-## To run
+## To run project
 
 Run this project requires setup Node.js to use npm packeges
 0- initialization npm by use : npm init on terminal. read more https://docs.npmjs.com/cli/v7/commands/npm-init
@@ -50,6 +51,8 @@ url, api key, user input, zipcode etc..
 -make another async function that post the data incoming from api and user input
 to the app
 
-### Rewrite UI style
+### Rewrite css style
 
-### Udapte data that coming from user and api
+### Udapte data incoming from user and api
+
+update the data that coming from user and api and send it to User interface.
