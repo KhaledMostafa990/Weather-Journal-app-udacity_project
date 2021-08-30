@@ -30,18 +30,23 @@ const server = app.listen(port, () => {
   console.log(`running on localhost: ${port}`);
 });
 
-// GET route
-app.get('/allData', (req, res) => {
+/**
+ *
+ * // GET route
+ *
+ **/
+app.get('/', (req, res) => {
   // Endpoint for all routes
   res.send(projectData);
 });
 
-// const data = [];
-// POST route
-// app.post('/addData', function sendData(req, res) {
-//   projectData['content'] = res.body.userResponse;
-//   projectData['temperature'] = res.body.temp;
-//   projectData['date'] = res.body.date;
-
-//   res.send(projectData);
-// });
+/**
+ *
+ * // POST route
+ *
+ **/
+app.post('/addData', (req, res) => {
+  // add the req body to project data
+  projectData = { ...req.body };
+  res.send(projectData);
+});

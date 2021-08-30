@@ -37,7 +37,7 @@ at client-side
 put global variables which need
 url, api key, user input, zipcode etc..
 
-### Use api url and credentials key to get weather data (GET request)
+### Use api url and api key to get weather data (GET request)
 
 -make async function(GET request) in app.js (client-side) to call api and get data using "fetch"
 
