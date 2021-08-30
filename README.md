@@ -7,9 +7,9 @@ Project requires from me.. create an asynchronous web app for get weather temper
 
 ## Instructions
 
-This will require modifying the `server.js` file and the `website/app.js` file.
-I can see `index.html` for element references, and once I have finished with the project steps,
-I will use `style.css` to style the application to customized perfection.
+This will require modifying the [1]`server.js` file and the [2]`website/app.js` file.
+I can see [3]`index.html` for element references, and once I have finished with the project steps,
+I will use [4]`style.css` to style the application to customized perfection.
 
 ## To run project
 
@@ -56,3 +56,9 @@ to the app
 ### Udapte data incoming from user and api
 
 update the data that coming from user and api and send it to User interface.
+
+### Inconclusion
+
+Thanks for Udacity commiunty resourses and supports from tutors and wibnars.
+Thanks for https://uigradients.com/#Cinnamint for colors.
+Thanks for W3school for emoji.

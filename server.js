@@ -35,7 +35,7 @@ const server = app.listen(port, () => {
  * // GET route
  *
  **/
-app.get('/getData', (req, res) => {
+app.get('/data', (req, res) => {
   // Endpoint for all routes
 
   res.send(projectData);
@@ -49,7 +49,7 @@ app.get('/getData', (req, res) => {
  **/
 app.post('/addData', (req, res) => {
   // add the req body to project data
-  // projectData = { ...req.body };
+
   projectData['date'] = req.body.date;
   projectData['userResponse'] = req.body.userResponse;
   projectData['temperature'] = req.body.temperature;
